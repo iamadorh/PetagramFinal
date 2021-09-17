@@ -1,4 +1,6 @@
-package com.example.petagramfinal;
+package com.example.petagramfinal.POJO;
+
+import android.graphics.Bitmap;
 
 public class Mascotas {
 

@@ -7,50 +7,46 @@
     android:layout_height="match_parent"
     tools:context=".CincoFavoritas">
 
-    <include android:id="@+id/miActionBar"
-        layout="@layout/action_bar">
-    </include>
-
 
     <ImageView
         android:id="@+id/ivfoto1"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/perrito"
-        android:layout_above="@+id/miActionBar"/>
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/perrito"/>
 
 
     <ImageView
         android:id="@+id/ivfoto2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:src="@drawable/vaca"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/ivfoto1"/>
 
 
     <ImageView
         android:id="@+id/ivfoto3"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:src="@drawable/hipo"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/ivfoto2"
         />
 
     <ImageView
         android:id="@+id/ivfoto4"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:src="@drawable/conejo"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/ivfoto3"/>
 
     <ImageView
         android:id="@+id/ivfoto5"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:src="@drawable/leon"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/ivfoto4"
         />
 

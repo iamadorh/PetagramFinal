@@ -5,10 +5,14 @@
       <map>
         <entry key="..\:/Users/NADAMA/AndroidStudioProjects/PetagramFinal/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/NADAMA/AndroidStudioProjects/PetagramFinal/app/src/main/res/layout/action_bar.xml" value="0.4466666666666667" />
-        <entry key="..\:/Users/NADAMA/AndroidStudioProjects/PetagramFinal/app/src/main/res/layout/activity_cinco_favoritas.xml" value="0.17552083333333332" />
-        <entry key="..\:/Users/NADAMA/AndroidStudioProjects/PetagramFinal/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/NADAMA/AndroidStudioProjects/PetagramFinal/app/src/main/res/layout/activity_acerca_de.xml" value="0.22" />
+        <entry key="..\:/Users/NADAMA/AndroidStudioProjects/PetagramFinal/app/src/main/res/layout/activity_cinco_favoritas.xml" value="0.1" />
+        <entry key="..\:/Users/NADAMA/AndroidStudioProjects/PetagramFinal/app/src/main/res/layout/activity_contacto.xml" value="0.22" />
+        <entry key="..\:/Users/NADAMA/AndroidStudioProjects/PetagramFinal/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/NADAMA/AndroidStudioProjects/PetagramFinal/app/src/main/res/layout/cardview_mascota.xml" value="0.27715355805243447" />
         <entry key="..\:/Users/NADAMA/AndroidStudioProjects/PetagramFinal/app/src/main/res/layout/favoritas_cinco.xml" value="0.1" />
+        <entry key="..\:/Users/NADAMA/AndroidStudioProjects/PetagramFinal/app/src/main/res/layout/fragment_perfil.xml" value="0.1796875" />
+        <entry key="..\:/Users/NADAMA/AndroidStudioProjects/PetagramFinal/app/src/main/res/layout/fragment_recyclerview.xml" value="0.1796875" />
         <entry key="..\:/Users/NADAMA/AndroidStudioProjects/PetagramFinal/app/src/main/res/menu/menu_opciones.xml" value="0.1796875" />
         <entry key="..\:/Users/NADAMA/AndroidStudioProjects/PetagramFinal/app/src/main/res/menu/menu_opciones2.xml" value="0.1" />
       </map>

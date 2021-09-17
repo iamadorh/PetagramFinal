@@ -1,7 +1,8 @@
-package com.example.petagramfinal;
+package com.example.petagramfinal.Adaptadores;
 
-import static android.content.Context.*;
-
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,17 +12,28 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.material.snackbar.Snackbar;
+import com.example.petagramfinal.Fragmentos.PerfilFragment;
+import com.example.petagramfinal.IComunicaFragments;
+import com.example.petagramfinal.MainActivity;
+import com.example.petagramfinal.POJO.Mascotas;
+import com.example.petagramfinal.R;
+import com.mikhaellopez.circularimageview.CircularImageView;
 
 import java.util.ArrayList;
+import java.util.zip.Inflater;
 
 public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.mascotaViewHolder> {
     ArrayList<Mascotas> mascotas;
-
+    Activity activity;
 
     public MascotaAdaptador( ArrayList<Mascotas> mascotas){
+
         this.mascotas = mascotas;
     }
 
@@ -45,12 +57,20 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.masc
                 Toast.makeText(view.getContext(), "Like a " + mascota.getNombre()  , Toast.LENGTH_SHORT).show();
             }
         });
+        mascotaViewHolder.ivFotoCV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(v.getContext(), mascota.getNombre()  , Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
     public int getItemCount() {
+
         return mascotas.size();
     }
+
 
     public static class mascotaViewHolder extends RecyclerView.ViewHolder
     {
