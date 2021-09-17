@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -23,10 +24,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Toolbar miActionBar = findViewById(R.id.action_bar);
-        setSupportActionBar(miActionBar);
-
 
         listaPets = (RecyclerView) findViewById(R.id.rvMascotas);
 
@@ -48,6 +45,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.menu_opciones, menu);
+        return true;
+    }
+
  public void initAdapter(){
         MascotaAdaptador adapter = new MascotaAdaptador(mascotas);
         listaPets.setAdapter(adapter);
@@ -60,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
         mascotas.add(new Mascotas(R.drawable.conejo, "Conejito", "3"));
         mascotas.add(new Mascotas(R.drawable.leon, "León","5"));
-        mascotas.add(new Mascotas(R.drawable.hipo, "Hipopotamo","1"));
+        mascotas.add(new Mascotas(R.drawable.fav5, "Hipopotamo","1"));
         mascotas.add(new Mascotas(R.drawable.tortuga, "Tortuga","2"));
         mascotas.add(new Mascotas(R.drawable.perrito, "Perrito","10"));
         mascotas.add(new Mascotas(R.drawable.vaca,"Vaquita","1"));
