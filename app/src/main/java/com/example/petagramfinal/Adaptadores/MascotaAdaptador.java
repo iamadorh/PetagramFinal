@@ -23,6 +23,7 @@ import com.example.petagramfinal.IComunicaFragments;
 import com.example.petagramfinal.MainActivity;
 import com.example.petagramfinal.POJO.Mascotas;
 import com.example.petagramfinal.R;
+import com.example.petagramfinal.db.ConstructorMascotas;
 import com.mikhaellopez.circularimageview.CircularImageView;
 
 import java.util.ArrayList;
@@ -50,17 +51,23 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.masc
         Mascotas mascota = mascotas.get(position);
         mascotaViewHolder.ivFotoCV.setImageResource(mascota.getFoto());
         mascotaViewHolder.tvNombreCV.setText(mascota.getNombre());
-        mascotaViewHolder.tvLikesCV.setText(mascota.getLikes());
+        mascotaViewHolder.tvLikesCV.setText(String.valueOf(mascota.getLikes()));
         mascotaViewHolder.btnLike.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(view.getContext(), "Like a " + mascota.getNombre()  , Toast.LENGTH_SHORT).show();
+
+                ConstructorMascotas constructorMascotas = new ConstructorMascotas(view.getContext());
+                constructorMascotas.darLike(mascota);
+                mascotaViewHolder.tvLikesCV.setText(String.valueOf(constructorMascotas.obtenerLikes(mascota)));
+
             }
         });
         mascotaViewHolder.ivFotoCV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(v.getContext(), mascota.getNombre()  , Toast.LENGTH_SHORT).show();
+
             }
         });
     }

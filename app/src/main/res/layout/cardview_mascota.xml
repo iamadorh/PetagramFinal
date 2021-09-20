@@ -26,34 +26,49 @@
 
             />
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
+
             >
             <ImageButton
                 android:id="@+id/ibLike"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/hueso_blanco"/>
+                android:src="@drawable/hueso_blanco"
+                android:layout_alignParentLeft="true"/>
 
-            <TextView
-                android:id="@+id/tvLikes"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="10dp"
-                android:text="5"
-                android:textSize="40dp"
-                android:textStyle="bold" />
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                >
 
-            <ImageView
-                android:id="@+id/ivTotalLikes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:src="@drawable/hueso_amarillo"/>
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/tvLikes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerVertical="true"
+                    android:text=" 0 "
+                    android:textSize="45dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ivTotalLikes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/hueso_amarillo"/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
 
 
     </LinearLayout>

@@ -1,19 +1,17 @@
 package com.example.petagramfinal.POJO;
 
-import android.graphics.Bitmap;
-
 public class Mascotas {
 
-
+    private int id;
     private int foto;
     private String nombre;
-    private String likes;
+    private int likes;
 
-    public String getLikes() {
+    public int getLikes() {
         return likes;
     }
 
-    public void setLikes(String likes) {
+    public void setLikes(int likes) {
         this.likes = likes;
     }
 
@@ -34,9 +32,23 @@ public class Mascotas {
         this.nombre = nombre;
     }
 
-    public Mascotas(int foto, String nombre, String likes) {
+    public Mascotas(int foto, String nombre, int likes) {
         this.foto = foto;
         this.nombre = nombre;
         this.likes = likes;
+    }
+
+    public Mascotas(int id, int foto, String nombre) {
+        this.foto = foto;
+        this.nombre = nombre;
+        this.likes = likes;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
